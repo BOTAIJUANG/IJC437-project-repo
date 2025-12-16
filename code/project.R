@@ -19,7 +19,7 @@ url_locations <- paste0(
 
 res_loc <- GET(
   url_locations, 
-  add_headers("X-API-Key" = "5b4735af4df8c19c8c1da77fa3fa584c31535cc2309130fab1f90994ac9acac1")
+  add_headers("X-API-Key" = "YOUR_OPENAQ_API_KEY")
 )
 stop_for_status(res_loc)
 
@@ -59,7 +59,7 @@ for (i in 1:4) {
   
   res_loc <- GET(
     url_loc, 
-    add_headers("X-API-Key" = "5b4735af4df8c19c8c1da77fa3fa584c31535cc2309130fab1f90994ac9acac1")
+    add_headers("X-API-Key" = "YOUR_OPENAQ_API_KEY")
   )
   stop_for_status(res_loc)
   
@@ -79,7 +79,7 @@ for (i in 1:4) {
   
   res_days <- GET(
     url_days, 
-    add_headers("X-API-Key" = "5b4735af4df8c19c8c1da77fa3fa584c31535cc2309130fab1f90994ac9acac1")
+    add_headers("X-API-Key" = "YOUR_OPENAQ_API_KEY")
   )
   stop_for_status(res_days)
   
